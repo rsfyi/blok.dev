@@ -1,0 +1,64 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "blok.dev",
+  "homepage": "https://blok.dev",
+  "items": [
+    {
+      "name": "brutalist-buttons",
+      "type": "registry:component",
+      "title": "Brutalist Buttons",
+      "description": "A collection of customizable brutalist-style buttons with multiple variants including default, secondary, destructive, outline, ring, gradient, and link styles. Features include shadow effects, hover animations, icon support, and loading states.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/brutalist/buttons/button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "example-form",
+      "type": "registry:component",
+      "title": "Example Form",
+      "description": "A contact form with Zod validation.",
+      "dependencies": ["zod"],
+      "registryDependencies": ["button", "input", "label", "textarea", "card"],
+      "files": [
+        {
+          "path": "registry/example-form/example-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "complex-component",
+      "type": "registry:component",
+      "title": "Complex Component",
+      "description": "A complex component showing hooks, libs and components.",
+      "registryDependencies": ["card"],
+      "files": [
+        {
+          "path": "registry/complex-component/page.tsx",
+          "type": "registry:page",
+          "target": "app/pokemon/page.tsx"
+        },
+        {
+          "path": "registry/complex-component/components/pokemon-card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/complex-component/components/pokemon-image.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/complex-component/lib/pokemon.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "registry/complex-component/hooks/use-pokemon.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
+}
